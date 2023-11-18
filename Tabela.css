@@ -1,0 +1,76 @@
+#cabecalho{
+  background-color: #223266;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#logo-top-tabela{
+  width: 22%;
+}
+
+#central-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+/* Estilo para o botão "Novo" */
+#central-container a:nth-child(1) {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 10px;
+  background-color: #223266; /* Cor de fundo azul */
+  border: 2px solid #223266; /* Borda azul */
+  border-radius: 10px; /* Bordas curvadas */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  color: #fff; /* Cor do texto branca */
+  text-decoration: none; /* Remover sublinhado do link */
+}
+
+/* Estilo para o botão "Relatório" */
+.btn-relatorio {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: 10px;
+  background-color: #223266; /* Cor de fundo azul */
+  border: 2px solid #223266; /* Borda azul */
+  border-radius: 10px; /* Bordas curvadas */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  color: #fff; /* Cor do texto branca */
+  text-decoration: none; /* Remover sublinhado do link */
+}
+
+
+.tabela-container {
+  margin: 20px; /* Adicione o espaçamento desejado entre a tabela e as bordas da tela */
+}
+
+table {
+  border-collapse: collapse; /* Para mesclar as bordas das células */
+  width: 100%; /* A largura desejada da tabela */
+  border-radius: 10px;
+  border: 3px solid #223266; 
+}
+
+table th, table td {
+  padding: 8px; /* Espaçamento interno nas células */
+  text-align: center; /* Alinhar o texto ao centro nas células */
+  border: 1px solid #223266; 
+}
+
+table th {
+  color: rgb(255, 255, 255);
+  background-color: #223266; 
+}
+
+table td {
+  border: 1px solid #ccc; 
+  border-bottom: 1px solid #223266;
+}

@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fcfcfc;
+    height: 400px; /* Aumente a altura */
+    width: 500px; /* Aumente a largura */
+    margin: 5px;
+    padding: 20px; /* Aumente o espaço interno */
+    border: 1px solid #233367;
+    border-radius: 20px;
+}
+
+.nav1 {
+    height: 80px;
+    margin: 0px;
+}
+
+.coluna1 {
+    text-align: center;
+    height: 400px; /* Aumente a altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fone {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin: 5px 0; /* Adicione uma margem menor verticalmente */
+}
+
+.text-container {
+    margin: 5px 0; /* Aplica margem apenas ao texto */
+}
