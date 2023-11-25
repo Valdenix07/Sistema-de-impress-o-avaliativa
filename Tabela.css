@@ -1,16 +1,50 @@
-#cabecalho{
+#cabecalho {
   background-color: #223266;
   width: 100%;
   height: 90%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* Distribui as divs horizontalmente */
   align-items: center;
   text-align: center;
 }
 
-#logo-top-tabela{
-  width: 22%;
+#cabecalho-esquerda,
+#cabecalho-central,
+#cabecalho-direita {
+  width: 30%;
+}
+
+#cabecalho-direita {
+  display: flex;
+  justify-content: flex-end; /* Alinha os botões à direita na div direita */
+  align-items: center;
+}
+
+.botoes-superior-direito a {
+  margin-bottom: 130px;
+  margin-right: 0px;
+  background-color: #223266;
+  border-color: transparent;
+  text-decoration: none; /* Remover sublinhado padrão de links */
+  color: #fff; /* Cor do texto branca para contrastar com o fundo */
+  padding: 8px 8px; /* Adicionar preenchimento aos links para melhor aparência */
+  border-radius: 5px; /* Adicionar bordas curvadas */
+  display: inline-block; /* Certificar-se de que o link se comporte como um bloco */
+}
+
+
+#senha_troca_logo{
+  width: 40px;
+  height: 40px;
+}
+
+#logout_logo{
+  width: 40px;
+  height: 40px;
+}
+
+#logo-top-tabela {
+  width: 100%; /* Para ocupar 100% da largura da div */
 }
 
 #central-container {
@@ -46,7 +80,6 @@
   color: #fff; /* Cor do texto branca */
   text-decoration: none; /* Remover sublinhado do link */
 }
-
 
 .tabela-container {
   margin: 20px; /* Adicione o espaçamento desejado entre a tabela e as bordas da tela */

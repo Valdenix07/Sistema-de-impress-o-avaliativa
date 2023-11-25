@@ -1,4 +1,14 @@
 <?php
+
+session_start();
+
+// Verifique se o usuário está autenticado
+if (!isset($_SESSION['token'])) {
+    // Se não estiver autenticado, redirecione para a página de login
+    header('Location: ../index.html');
+    exit();
+}
+
 require('../backend/Config.php');
 
 try {
@@ -25,7 +35,18 @@ $conn = null;
 </head>
 <body>
     <div id="cabecalho">
-        <img id="logo-top-tabela" src="images/0d258eff-d65a-4926-8f12-6056faed0be1.jfif" alt="">
+        <div id="cabecalho-esquerda">
+            <!-- Conteúdo da parte esquerda aqui -->
+        </div>
+        <div id="cabecalho-central">
+            <img id="logo-top-tabela" src="images/0d258eff-d65a-4926-8f12-6056faed0be1.jfif" alt="">
+        </div>
+        <div id="cabecalho-direita">
+            <div class="botoes-superior-direito">
+                <a href="Recuperar-senha.html"><img id="senha_troca_logo" src="images/senha_troca.jpg" alt="Trocar senha"></a>
+                <a href="backend/logout.php"><img id="logout_logo" src="images/logout.jpg" alt="Sair"></a>
+            </div>
+        </div>
     </div>
     <div id="central-container">
         <a href="Cadastrar.html" >Novo</a>
