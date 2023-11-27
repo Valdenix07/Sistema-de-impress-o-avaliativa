@@ -12,7 +12,29 @@
     <meta name="generator" content="Nicepage 4.18.5, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     
-    
+    <script>
+      // Função para extrair parâmetros da URL
+      function getParameterByName(name, url) {
+          if (!url) url = window.location.href;
+          name = name.replace(/[\[\]]/g, "\\$&");
+          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      // Função para exibir mensagem de erro se presente na URL
+      function displayErrorMessage() {
+          var errorMessage = getParameterByName('error');
+          if (errorMessage) {
+              alert(errorMessage); // Substitua por sua lógica de exibição de mensagem
+          }
+      }
+
+      // Chame a função ao carregar a página
+      window.onload = displayErrorMessage;
+  </script>
    
   </head>
   <body data-home-page="Pagina-inicial.html" data-home-page-title="Pagina inicial" class="u-body u-overlap u-xl-mode" data-lang="pt">

@@ -51,7 +51,7 @@ $conn = null;
     <div id="central-container">
         <a href="Cadastrar.html" >Novo</a>
         <form action="Pdf.php" method="post">
-            <input type="submit" name="gerar_pdf" value="Relatório PDF" class="btn-relatorio">
+            <input type="submit" name="gerar_pdf" value="Relatório" class="btn-relatorio">
         </form>
     </div>
     <div class="tabela-container">

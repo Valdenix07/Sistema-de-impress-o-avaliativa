@@ -30,15 +30,15 @@ $sql = "CREATE TABLE IF NOT EXISTS usuarios (
 
     //inclusão de usuario teste
 
-/*
-$sql = "INSERT INTO usuarios (email, senha) VALUES ('teste@exemplo.com', 'senha123')";
+
+$sql = "INSERT INTO usuarios (email, senha) VALUES ('teste@exemplo.com', '123')";
 
 if ($conn->query($sql) === TRUE) {
   echo "Inserir usuario teste feito successfully".'<br>';
 } else {
   echo "Error creating table: " . $conn->error.'<br>';
 }
-*/
+
 
 // SQL para criar a tabela "provas"
 $sql = "CREATE TABLE IF NOT EXISTS provas (
