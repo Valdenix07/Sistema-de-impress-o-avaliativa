@@ -28,6 +28,6 @@ if (isset($_POST['novaSenha']) && isset($_POST['confirmarsenha'])) {
         echo "Senhas diferentes";
     }
 
-    header('Location: ../index.html');
+    header('Location: ../backend/atualizarsenhas.php');
 
 }

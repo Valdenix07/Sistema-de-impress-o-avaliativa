@@ -19,6 +19,7 @@ while ($user = $sql->fetch(PDO::FETCH_ASSOC)) {
 }
 
 echo "Senhas atualizadas com sucesso!";
+header('Location: ../index.html');
 ?>
 
 

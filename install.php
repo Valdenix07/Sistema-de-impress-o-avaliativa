@@ -31,7 +31,7 @@ $sql = "CREATE TABLE IF NOT EXISTS usuarios (
     //inclusão de usuario teste
 
 
-$sql = "INSERT INTO usuarios (email, senha) VALUES ('teste@exemplo.com', '123')";
+$sql = "INSERT INTO usuarios (email, senha) VALUES ('teste@exemplo.com', '$2y$10$./YN1WZEWBKRkInhPSlFSO3ARmQwSjysZ4O.ISszC6PnqQt.Os2fK')";
 
 if ($conn->query($sql) === TRUE) {
   echo "Inserir usuario teste feito successfully".'<br>';
